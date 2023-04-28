@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Open-Sans', sans-serif;
+    color: rgb(44, 41, 44);
+
+    background: linear-gradient(135deg, hsl(271, 100%, 77%) 0%, #d5cde9 100%);
+}
+
+#main-header {
+    background-color: rgb(140, 0, 255);
+    color: white;
+    padding: 2rem 5%;
+    text-align: center;
+    animation: breathing 5s ease-in-out infinite;
+}
+
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn {
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(140, 0, 255);
+    border: 1px solid rgb(140, 0, 255);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    animation: breathe 4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn:hover {
+    background-color: rgb(102, 45, 201);
+    border-color: rgb(79, 10, 190);
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn-alt {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(140, 0, 255);
+    border: 1px solid rgb(140, 0, 255);
+}
+
+
+.btn-alt:hover {
+    background-color: #792db8;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .social-media-icons {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .social-media-icons li {
+    margin-right: 1rem;
+  }
+  .social-media-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .social-media-icons i {
+    transition: all 0.3s ease;
+  }
+  .social-media-icons a:hover i {
+    transform: scale(1.2);
+  }
+
